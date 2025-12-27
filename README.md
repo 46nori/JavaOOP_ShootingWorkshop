@@ -17,11 +17,13 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 ### 方法B: GitHubから直接インポートする場合
 1.  **Eclipseを起動**します。
 2.  メニューバーから **[File]** > **[Import...]** を選択します。
-3.  **[Git]** > **[Repositories from GitHub]** を選び、**[Next]** を押します。
-4.  Search for repositories written inで、選択肢から **[Java]** を選びます。
+3.  **[Git]** > **[Projects from Git (with smart import)]** を選び、**[Next]** を押します。
+4.  **[GitHub]** を選択し、**[Next]** を押します。
 5.  検索欄に `JavaOOP_ShootingWorkshop` と入力して **Search**ボタンを押します。
-6.  検索結果に **46nori/JavaOOP_ShootingWorkshop** が表示されるので選択します。
-7.  **[Finish]** をクリックします。
+7.  検索結果に **46nori/JavaOOP_ShootingWorkshop (Java)(...** が表示されるので選択し、**[Next]** を押します。
+8.  ブランチを選択します。(通常はmainにチェックが入っていればOK) **[Next]** を押します。
+9.  Directoryを自分の好きな作業フォルダに設定し、**[Next]** を押します。
+10.  **[Finish]** をクリックします。
 
 これで、`src` フォルダ内の各ステップ（`step01`〜`step07`）がパッケージとして認識されます。
 
