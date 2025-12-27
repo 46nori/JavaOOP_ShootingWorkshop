@@ -18,11 +18,10 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 1.  **Eclipseを起動**します。
 2.  メニューバーから **[File]** > **[Import...]** を選択します。
 3.  **[Git]** > **[Repositories from GitHub]** を選び、**[Next]** を押します。
-4.  **[Clone URI]** を選び、**[Next]** を押します。
-5.  **URI** 欄にこのリポジトリのURL`https://github.com/46nori/JavaOOP_ShootingWorkshop.git`を入力し、**[Next]** を押します。
-6.  インポートしたいブランチ（通常は `main`）を選び、**[Next]** を押します。
-7.  保存先フォルダを確認し、**[Next]** を押します。
-8.  **[Finish]** をクリックします。
+4.  Search for repositories written inで、選択肢から **[Java]** を選びます。
+5.  検索欄に `JavaOOP_ShootingWorkshop` と入力して **Search**ボタンを押します。
+6.  検索結果に **46nori/JavaOOP_ShootingWorkshop** が表示されるので選択します。
+7.  **[Finish]** をクリックします。
 
 これで、`src` フォルダ内の各ステップ（`step01`〜`step07`）がパッケージとして認識されます。
 
