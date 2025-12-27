@@ -17,7 +17,7 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 ### 方法B: GitHubから直接インポートする場合
 1.  **Eclipseを起動**します。
 2.  メニューバーから **[File]** > **[Import...]** を選択します。
-3.  **[Git]** > **[Projects from Git (with smart import)]** を選び、**[Next]** を押します。
+3.  **[Git]** > **[Repositories from GitHub]** を選び、**[Next]** を押します。
 4.  **[Clone URI]** を選び、**[Next]** を押します。
 5.  **URI** 欄にこのリポジトリのURL`https://github.com/46nori/JavaOOP_ShootingWorkshop.git`を入力し、**[Next]** を押します。
 6.  インポートしたいブランチ（通常は `main`）を選び、**[Next]** を押します。
