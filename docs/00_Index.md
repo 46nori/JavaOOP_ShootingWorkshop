@@ -23,7 +23,9 @@ JavaOOP_ShootingWorkshop/
 │   ├── step04_array/          # 多数の敵の生成と制御
 │   ├── step05_inheritance/    # 継承を使った敵の種類の追加
 │   ├── step06_polymorphism/   # ポリモーフィズムによる一括管理
-│   └── step07_encapsulation/  # カプセル化によるデータの保護
+│   ├── step07_encapsulation/  # カプセル化によるデータの保護
+│   ├── step08_refactoring/    # リファクタリングによる品質向上
+│   └── advanced_challenge/    # 応用編：物理演算シミュレーション
 │
 └── docs/                  # 解説ドキュメント
     ├── 01_Concept.md

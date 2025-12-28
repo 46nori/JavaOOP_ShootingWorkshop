@@ -39,6 +39,7 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 - [05_Inheritance.md](docs/05_Inheritance.md) - 継承 (Inheritance)
 - [06_Polymorphism.md](docs/06_Polymorphism.md) - ポリモーフィズム (Polymorphism)
 - [07_Encapsulation.md](docs/07_Encapsulation.md) - カプセル化 (Encapsulation)
+- [08_Refactoring.md](docs/08_Refactoring.md) - リファクタリング (Refactoring)
 
 ## 🛠 動作環境
 - Java Development Kit (JDK) 8以上
