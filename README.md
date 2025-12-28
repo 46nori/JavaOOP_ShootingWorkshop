@@ -40,6 +40,7 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 - [06_Polymorphism.md](docs/06_Polymorphism.md) - ポリモーフィズム (Polymorphism)
 - [07_Encapsulation.md](docs/07_Encapsulation.md) - カプセル化 (Encapsulation)
 - [08_Refactoring.md](docs/08_Refactoring.md) - リファクタリング (Refactoring)
+- [09_AdvancedChallenge.md](docs/09_AdvancedChallenge.md) - 応用編：物理演算シミュレーション
 
 ## 🛠 動作環境
 - Java Development Kit (JDK) 8以上
