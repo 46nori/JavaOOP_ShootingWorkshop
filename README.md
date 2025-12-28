@@ -41,3 +41,24 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 ## 🛠 動作環境
 - Java Development Kit (JDK) 8以上
 - Eclipse IDE for Java Developers
+
+---
+
+<details>
+<summary>参考：コマンドラインで実行する場合</summary>
+
+Eclipseを使わず、ターミナルから直接実行することも可能です。
+
+1. `src` ディレクトリに移動します。
+   ```bash
+   cd src
+   ```
+2. コンパイルします（例：Step 4の場合）。
+   ```bash
+   javac step04_array/*.java
+   ```
+3. パッケージ名を指定して実行します。
+   ```bash
+   java step04_array.GameMain
+   ```
+</details>
