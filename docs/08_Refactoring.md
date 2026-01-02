@@ -108,8 +108,9 @@ private void sleep() {
 }
 ```
 
-## 📝 課題
-`src/step08_refactoring` のコードを確認し、実際に動かしてみましょう。
+## 実行方法
+Eclipse上で `src/step08_refactoring/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
 動きはStep 7と全く同じはずです。しかし、コードの品質（読みやすさ、変更しやすさ、安全性）は大きく向上しています。
 
-これがオブジェクト指向プログラミングのゴールの一つです。
+
+次は [応用編: 物理演算シミュレーション (Advanced Challenge)](09_AdvancedChallenge.md) です。
