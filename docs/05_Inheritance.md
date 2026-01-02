@@ -10,20 +10,26 @@
 ## 🔑 継承の仕組み
 
 ### 親クラスと子クラス
+
 - **親クラス (Super Class)**: ベースとなるクラス。ここでは `Enemy` クラスです。共通のフィールド（x, yなど）やメソッド（drawなど）を持ちます。
 - **子クラス (Sub Class)**: 親クラスを拡張したクラス。ここでは `StraightEnemy` や `WavyEnemy` です。
 
 ### 重要なキーワード
 
 #### 1. extends（拡張する）
+
 クラス名の後ろに `extends 親クラス名` をつけると、その親クラスの機能（フィールドやメソッド）をすべて引き継ぐことができます。
+
 ```java
 public class StraightEnemy extends Enemy { ... }
 ```
+
 これで `StraightEnemy` は、自分で書かなくても `x` や `y` を持ち、`draw()` できるようになります。
 
 #### 2. super（親クラスの参照）
+
 子クラスのコンストラクタでは、まず最初に **「親クラスのコンストラクタ」** を呼んで、親としての初期化（座標のセットなど）を完了させる必要があります。
+
 ```java
 public StraightEnemy(double startX, ...) {
     super(startX, ...); // 親(Enemy)のコンストラクタを呼び出す
@@ -31,7 +37,9 @@ public StraightEnemy(double startX, ...) {
 ```
 
 #### 3. @Override（上書き）
+
 親クラスにあるメソッドと同じ名前のメソッドを子クラスで作ることで、動作を上書き変更できます。これを **オーバーライド** と呼びます。
+
 ```java
 @Override
 public void move() {
@@ -44,18 +52,28 @@ public void move() {
 ## 実装例 (`src/step05_inheritance`)
 
 ### 直進する敵 (`StraightEnemy.java`)
-`Enemy` クラスの機能をそのまま使います。特別なことは何もしなくて良いため、コードはとても短くなります。
+
+`Enemy` クラスの機能をそのまま使います。
+ただし、色は変えたいので `draw` メソッドだけ上書き（オーバーライド）してみましょう。
 
 ```java
 public class StraightEnemy extends Enemy {
     public StraightEnemy(double startX, double startY, double startAngle, double startSpeed) {
         super(startX, startY, startAngle, startSpeed);
     }
+
     // move() は書いていないので、親クラス(Enemy)のmove()がそのまま使われます
+
+    @Override
+    public void draw(Graphics g) {
+        g.setColor(Color.BLUE); // 直進する敵は青
+        g.fillOval((int)x, (int)y, size, size);
+    }
 }
 ```
 
 ### 波打つ敵 (`WavyEnemy.java`)
+
 `move` メソッドをオーバーライドして、動きを変更します。
 
 ```java
@@ -83,6 +101,7 @@ public class WavyEnemy extends Enemy {
 ```
 
 ## 実行方法
+
 Eclipse上で `src/step05_inheritance/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
 青い敵（直進）と緑の敵（波打ち）が表示されれば成功です！
 

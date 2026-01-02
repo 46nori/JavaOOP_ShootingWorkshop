@@ -93,10 +93,7 @@ public class Enemy {
             // 現在の速度を、法線方向と接線方向に分解 (内積)
             double v1n = this.vx * nx + this.vy * ny;
             double v1t = this.vx * tx + this.vy * ty;
-            double v2n = other.vx * nx + other.vx * ny; // ここはバグの元になりやすいので注意(other.vx * nx + other.vy * ny)
-            double v2t = other.vx * tx + other.vy * ty;
-
-            // other側の再計算（上の行のタイプミス防止のため明示的に書く）
+            
             double other_v2n = other.vx * nx + other.vy * ny;
             double other_v2t = other.vx * tx + other.vy * ty;
 
