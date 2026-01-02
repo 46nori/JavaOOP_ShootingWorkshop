@@ -125,6 +125,33 @@ for (int i = 0; i < enemies.length; i++) {
 
 `j` を `i + 1` から始めることで、「AとB」「BとA」のような重複チェックを防いでいます。
 
+### ダブルバッファリング（ちらつき防止）
+
+アニメーションを行う際、画面（ウィンドウ）に対して直接「消して、描いて」を繰り返すと、描画の途中経過が見えてしまい、画面がチカチカと点滅して見えることがあります（フリッカー現象）。
+これを防ぐためのテクニックが **ダブルバッファリング** です。
+
+1. **裏画面（オフスクリーン）を用意する**: メモリ上に、画面と同じサイズの空の画像を作ります。
+2. **裏画面に描く**: キャラクターや背景など、すべての描画をこの裏画面に対して行います。
+3. **表画面にコピーする**: 描き終わった裏画面を、一瞬で表のウィンドウにコピー（転送）します。
+
+こうすることで、ユーザーには「完成した絵」だけがパラパラ漫画のように切り替わって見えるため、ちらつきのない滑らかなアニメーションになります。
+
+```java
+// 1. 裏画面の準備 (初回のみ)
+if (offScreenImage == null) {
+    offScreenImage = createImage(getWidth(), getHeight());
+    offScreenGraphics = offScreenImage.getGraphics();
+}
+
+// 2. 裏画面に描画 (背景クリア -> キャラ描画)
+offScreenGraphics.setColor(Color.BLACK);
+offScreenGraphics.fillRect(0, 0, getWidth(), getHeight());
+// ... (敵の描画など) ...
+
+// 3. 表画面に転送
+g.drawImage(offScreenImage, 0, 0, this);
+```
+
 ## 実行方法
 
 Eclipse上で `src/advanced_challenge/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
