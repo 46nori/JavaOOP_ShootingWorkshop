@@ -51,6 +51,7 @@ for (int i = 0; i < enemies.length; i++) {
 >   - つまり、「最低でもスピード1.0、最大でスピード4.0近く」という調整ができます。
 
 ## 実行方法
+
 Eclipse上で `src/step04_array/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
 たくさんの敵がランダムな方向に動いていれば成功です！
 
