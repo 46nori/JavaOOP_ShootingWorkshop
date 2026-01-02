@@ -6,30 +6,40 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 
 このプロジェクトはEclipseで学習することを想定して作られています。
 はじめに[Eclipseをインストール](https://www.eclipse.org/downloads/)してください。
-次に、状況に合わせて以下のいずれかの方法でインポートしてください。
+次に、状況に合わせて以下のいずれかの方法でソースコードをインポートしてください。
 
 ### 方法A: すでにフォルダが手元にある場合
-1.  **Eclipseを起動**します。
-2.  メニューバーから **[File]** > **[Open Projects from File System...]** を選択します。
-3.  **[Directory]** ボタンをクリックし、このフォルダ `JavaOOP_ShootingWorkshop` を選択します。
-4.  **[Finish]** をクリックします。
+
+1. **Eclipseを起動**します。
+2. メニューバーから **[File]** > **[Open Projects from File System...]** を選択します。
+3. **[Directory]** ボタンをクリックし、このフォルダ `JavaOOP_ShootingWorkshop` を選択します。
+4. **[Finish]** をクリックします。
 
 ### 方法B: GitHubから直接インポートする場合
-1.  **Eclipseを起動**します。
-2.  メニューバーから **[File]** > **[Import...]** を選択します。
-3.  **[Git]** > **[Projects from Git (with smart import)]** を選び、**[Next]** を押します。
-4.  **[GitHub]** を選択し、**[Next]** を押します。
-5.  検索欄に `JavaOOP_ShootingWorkshop` と入力して **Search**ボタンを押します。
-7.  検索結果に **46nori/JavaOOP_ShootingWorkshop (Java)(...** が表示されるので選択し、**[Next]** を押します。
-8.  ブランチを選択します。(通常はmainにチェックが入っていればOK) **[Next]** を押します。
-9.  Directoryを自分の好きな作業フォルダに設定し、**[Next]** を押します。
-10.  **[Finish]** をクリックします。
 
-これで、`src` フォルダ内の各ステップ（`step01`〜`step07`）がパッケージとして認識されます。
+1. **Eclipseを起動**します。
+2. メニューバーから **[File]** > **[Import...]** を選択します。
+3. **[Git]** > **[Projects from Git (with smart import)]** を選び、**[Next]** を押します。
+4. **[GitHub]** を選択し、**[Next]** を押します。
+5. 検索欄に `JavaOOP_ShootingWorkshop` と入力して **Search**ボタンを押します。
+6. 検索結果に **46nori/JavaOOP_ShootingWorkshop (Java)(...** が表示されるので選択し、**[Next]** を押します。
+7. ブランチを選択します。(通常はmainにチェックが入っていればOK) **[Next]** を押します。
+8. Directoryを自分の好きな作業フォルダに設定し、**[Next]** を押します。
+9. **[Finish]** をクリックします。
+
+これで、`src` フォルダ内の各ステップ（`step01`〜`step08`, `advanced_challenge`）がパッケージとして認識されます。
+
+### Markdownのプレビュー用プラグインの導入
+
+1. メニューバーから **[Help]** > **[Eclipse Marketplace...]** を選択します。
+2. 検索窓に `Markdown` と入力し、**Markdown Text Editor** を選んでインストールします。
+3. Eclipseを再起動します。
+4. .md ファイルを開きます。プレビューが表示されない場合は、ウインドウ下部の **[Preview]** タブを選択します。
 
 ## 📚 学習カリキュラム
 
 インポートが完了したら、`docs` フォルダ内のドキュメントを順番に読み進めてください。
+（Markdown Text Editor では表や数式が正しく表示できません。確認したい場合は[GitHub](https://github.com/46nori/JavaOOP_ShootingWorkshop/tree/main/docs/00_Index.md)を参照してください。ブラウザが開きます。）
 
 - [00_Index.md](docs/00_Index.md) - 目次と概要
 - [01_Concept.md](docs/01_Concept.md) - クラスの概念
@@ -43,8 +53,9 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 - [09_AdvancedChallenge.md](docs/09_AdvancedChallenge.md) - 応用編：物理演算シミュレーション
 
 ## 🛠 動作環境
+
 - Java Development Kit (JDK) 8以上
-- Eclipse IDE for Java Developers
+- Eclipse IDE for Java Developers 2025-12
 
 ---
 
