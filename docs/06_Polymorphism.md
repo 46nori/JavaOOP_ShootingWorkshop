@@ -19,6 +19,7 @@ WavyEnemy[] wavyEnemies = ...;
 for (StraightEnemy e : straightEnemies) e.move();
 for (WavyEnemy e : wavyEnemies) e.move();
 ```
+
 敵の種類が10種類に増えたら、配列もループも10個に増えてしまいます。これは大変です。
 
 ### ポリモーフィズムがある場合（スマート！）
