@@ -27,7 +27,7 @@ Javaのオブジェクト指向（クラス、継承、ポリモーフィズム�
 8. Directoryを自分の好きな作業フォルダに設定し、**[Next]** を押します。
 9. **[Finish]** をクリックします。
 
-これで、`src` フォルダ内の各ステップ（`step01`〜`step08`, `advanced_challenge`）がパッケージとして認識されます。
+これで、`src` フォルダ内の各ステップ（`step01`〜`step08`, `step09_advanced_challenge`）がパッケージとして認識されます。
 
 ### Markdownのプレビュー用プラグインの導入
 

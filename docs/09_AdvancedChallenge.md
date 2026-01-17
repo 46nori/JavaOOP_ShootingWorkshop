@@ -159,5 +159,5 @@ g.drawImage(offScreenImage, 0, 0, this);
 
 ## 実行方法
 
-Eclipse上で `src/advanced_challenge/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
+Eclipse上で `src/step09_advanced_challenge/GameMain.java` を右クリックし、**[Run As]** > **[Java Application]** を選択します。
 大小様々なボールが画面内を飛び回り、ぶつかり合って弾ける様子が観察できるはずです。

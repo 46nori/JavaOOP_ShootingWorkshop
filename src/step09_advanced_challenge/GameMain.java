@@ -1,4 +1,4 @@
-package advanced_challenge;
+package step09_advanced_challenge;
 
 import javax.swing.JFrame;
 import java.awt.Color;

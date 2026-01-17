@@ -28,7 +28,7 @@ JavaOOP_ShootingWorkshop/
 │   ├── step06_polymorphism/   # ポリモーフィズムによる一括管理
 │   ├── step07_encapsulation/  # カプセル化によるデータの保護
 │   ├── step08_refactoring/    # リファクタリングによる品質向上
-│   └── advanced_challenge/    # 応用編：物理演算シミュレーション
+│   └── step09_advanced_challenge/    # 応用編：物理演算シミュレーション
 │
 └── docs/                  # 解説ドキュメント
     ├── 01_Concept.md
